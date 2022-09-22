@@ -1,0 +1,160 @@
+// generics
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+// Colours
+@whiteish: #f0ffff;
+@blackish: #171717;
+@cyan: hsl(179, 62%, 43%);
+@brightyellow: hsl(71, 73%, 54%);
+@lightgrey: hsl(204, 43%, 93%);
+@greyishblue: hsl(218, 22%, 67%);
+
+// Body
+
+body {
+    background-color: @whiteish;
+    max-width: 375px;
+    margin: auto;
+}
+
+// Main
+
+.container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    margin: auto;
+}
+
+.first {
+    background-color: @lightgrey;
+    padding: 1.4rem;
+    border-radius: 12px 12px 0 0;
+}
+
+.first-h1 {
+    color: @cyan;
+    padding: 1rem;
+}
+
+.first-h2 {
+    color: @brightyellow;
+    padding: 1rem;
+}
+
+.first-para {
+    padding: 1rem;
+    color: @greyishblue;
+}
+
+.second {
+    background-color: darken(@cyan, 5%);
+    color: @lightgrey;
+    padding: 1.4rem;
+}
+
+.second-h2 {
+    padding: 1rem;
+}
+
+.second-para {
+    padding: 1rem;
+}
+
+.dollar-amt {
+    font-size: 2rem;
+    padding: 0.4rem;
+}
+
+button {
+    width: 275px;
+    margin: auto;
+    background-color: darken(@brightyellow, 2%);
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    color: @lightgrey;
+    font-size: 1.2rem;
+    margin: auto;
+    box-shadow: 0 2px 12px darken(@cyan, 10%);
+}
+
+.third {
+    background-color: @cyan;
+    color: @lightgrey;
+    padding: 1.4rem;
+    border-radius: 0 0 12px 12px;
+}
+
+.third-h2 {
+    padding: 1rem;
+}
+
+.list-items {
+    padding: 1rem;
+}
+
+.list-item {
+    padding: 0.1rem;
+    color: lighten(@lightgrey, 15%);
+    opacity: 0.8;
+}
+
+
+// Footer
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 980px) {
+    body {
+        max-width: 1440px;
+        margin: auto;
+        place-items: center;
+    }
+
+    .container {
+        width: 800px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: basline;
+        margin: 4rem auto 0 auto;
+    }
+
+    .first {
+        grid-row: 1;
+        grid-column: span 2;
+        align-content: center;
+    }
+
+    .second {
+        grid-row: 2;
+        border-radius: 0 0 0 12px;
+    }
+
+    .third {
+        grid-row: 2;
+        border-radius: 0 0 12px 0;
+    }
+}

@@ -8,43 +8,53 @@
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+
 </head>
+
 <body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+  <main class="container">
+    <section class="first">
+      <h1 class="first-h1">Join our community</h1>
+      
+      <h2 class="first-h2">30-day, hassle-free money back guarantee</h2>      
+      <p class="first-para">
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </section>    
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+    <section class="second">
+      <h1 class="second-h2">Monthly Subscription</h1>
+      
+      <p class="second-para"><span class="dollar-amt">&dollar;29</span> per month</p>
+      
+      <p class="second-para">Full access for less than &dollar;1 a day</p>
+      
+      <button type="submit">Sign Up</button>
+    </section>
+    
+    <section class="third">
+        <h2 class="third-h2">Why Us</h2>
+        
+        <ul class="list-items">
+          <li class="list-item">Tutorials by industry experts</li>
+          <li class="list-item">Peer &amp; expert code review</li>
+          <li class="list-item">Coding exercises</li>
+          <li class="list-item">Access to our GitHub repos</li>
+          <li class="list-item">Community forum</li>
+          <li class="list-item">Flashcard decks</li>
+          <li class="list-item">New videos every week</li>
+        </ul>
+      </section>
+  </main>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <br>
+    Coded by <a href="https://github.com/fyrfli">Camille Frantz (@fyrfli)</a>.
   </footer>
 </body>
 </html>

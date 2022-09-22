@@ -15,8 +15,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Code](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/fyrfli/single-price-grid/)
+- Live Site URL: [Live](fyrfli.github.io/single-price-grid)
 
 
 ## Author
